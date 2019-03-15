@@ -7,11 +7,11 @@ using Xamarin.Forms;
 
 namespace DiningEasy
 {
-    public partial class MainPage : TabbedPage
-    {
-        public MainPage()
-        {
-            InitializeComponent();
-        }
-    }
+	public partial class MenuPage : ContentPage
+	{
+		public MenuPage()
+		{
+			InitializeComponent();
+		}
+	}
 }
