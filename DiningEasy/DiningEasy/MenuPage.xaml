@@ -4,8 +4,7 @@
              x:Class="DiningEasy.MenuPage"
              Title="Menu">
     <StackLayout>
-        <Label Text="Welcome to Menu!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <Label Text="Список моделей" HorizontalOptions="Center" FontSize="Large" />
+        <ListView x:Name="phonesList" ItemsSource="{Binding Phones}" />
     </StackLayout>
 </ContentPage>
