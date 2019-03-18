@@ -97,52 +97,49 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\drawable\Images\Categories\Beverages.jpg" />
+    <AndroidResource Include="Resources\drawable\Beverages.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\drawable\Images\Categories\Desert.jpg" />
+    <AndroidResource Include="Resources\drawable\Grecheskij.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\drawable\Images\Categories\Grecheskij.jpg" />
+    <AndroidResource Include="Resources\drawable\Sup.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\drawable\Sup.jpg" />
+    <AndroidResource Include="Resources\drawable\Borsh.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\drawable\Images\Products\Borsh.jpg" />
+    <AndroidResource Include="Resources\drawable\Coffee.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\drawable\Images\Products\Coffee.jpg" />
+    <AndroidResource Include="Resources\drawable\Cookie.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\drawable\Images\Products\Cookie.jpg" />
+    <AndroidResource Include="Resources\drawable\Desert.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\drawable\Images\Products\Desert.jpg" />
+    <None Include="Resources\drawable\Grecheskij.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\drawable\Images\Products\Grecheskij.jpg" />
+    <AndroidResource Include="Resources\drawable\Olivie.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\drawable\Images\Products\Olivie.jpg" />
+    <AndroidResource Include="Resources\drawable\Salad.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\drawable\Images\Products\Salad.jpg" />
+    <AndroidResource Include="Resources\drawable\Shi.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\drawable\Images\Products\Shi.jpg" />
+    <AndroidResource Include="Resources\drawable\Shtrudel.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\drawable\Images\Products\Shtrudel.jpg" />
+    <AndroidResource Include="Resources\drawable\Tea.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\drawable\Images\Products\Tea.jpg" />
+    <AndroidResource Include="Resources\drawable\Uha.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\drawable\Images\Products\Uha.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\drawable\Images\Products\Сezar.jpg" />
+    <AndroidResource Include="Resources\drawable\Cezar.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

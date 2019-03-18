@@ -7,7 +7,10 @@
             <DataTemplate>
                 <ViewCell>
                     <Grid>
-                        <Image Source="{Binding Path}"></Image>
+                        <Grid.RowDefinitions>
+                            <RowDefinition ></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Image Aspect="AspectFill" Source="{Binding Path}"></Image>
                         <Label Text="{Binding Name}"/>
                         <Label Text="{Binding Cost}"/>
                     </Grid>
