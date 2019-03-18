@@ -4,12 +4,28 @@ namespace DiningEasy.Model
 {
     public class Product : IProduct, INotifyPropertyChanged
     {
+        string path;
         string name;
         string description;
         string ingridients;
         int weight;
         int cost;
 
+        public string Path
+        {
+            get
+            {
+                return path;
+            }
+            set
+            {
+                if (path != value)
+                {
+                    path = value;
+                    OnPropertyChanged(nameof(Path));
+                }
+            }
+        }
         public string Name
         {
             get

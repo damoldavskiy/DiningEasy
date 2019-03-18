@@ -6,6 +6,7 @@ namespace DiningEasy.Model
     public class Category : ICategory, INotifyPropertyChanged
     {
         string name;
+        string path;
         IEnumerable<IProduct> products;
 
         public string Name
@@ -20,6 +21,21 @@ namespace DiningEasy.Model
                 {
                     name = value;
                     OnPropertyChanged(nameof(Name));
+                }
+            }
+        }
+        public string Path
+        {
+            get
+            {
+                return path;
+            }
+            set
+            {
+                if (path != value)
+                {
+                    path = value;
+                    OnPropertyChanged(nameof(Path));
                 }
             }
         }

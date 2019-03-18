@@ -3,12 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DiningEasy.MenuPage"
              Title="Menu">
-    <ListView SelectionMode="None" ItemsSource="{Binding Categories}" ItemTapped="CategorySelected">
+    <ListView SelectionMode="None"  ItemsSource="{Binding Categories}" ItemTapped="CategorySelected">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
-                    <Grid>
-                        <Label Text="{Binding Name}"/>
+                    <Grid >
+                        <Image Source="{Binding Path}"></Image>
+                        <Label HeightRequest="200" Text="{Binding Name}"/>
                     </Grid>
                 </ViewCell>
             </DataTemplate>

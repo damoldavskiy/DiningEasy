@@ -15,6 +15,7 @@ namespace DiningEasy.Model
                 {
                     new Category
                     {
+                        Path="..\\Images\\Categories\\Sup.jpg",
                         Name = "Супы",
                         Products = new[]
                         {
@@ -46,6 +47,7 @@ namespace DiningEasy.Model
                     },
                     new Category
                     {
+                        Path="..\\Images\\Categories\\Grecheskij.jpg",
                         Name = "Салаты",
                         Products = new[]
                         {
@@ -76,6 +78,7 @@ namespace DiningEasy.Model
                         }
                     },
                     new Category {
+                        Path="..\\Images\\Categories\\Desert.jpg",
                         Name = "Десерты" ,
                         Products = new[]
                         {
@@ -239,6 +242,7 @@ namespace DiningEasy.Model
                         {
                         new Product
                             {
+                                Path="..\\Images\\Products\\Cookie.jpg",
                                 Name = "Печенье",
                                 Description = "Вкусное печенье с шоколадной крошкой для тех, кто любит побаловать себя сладким.",
                                 Ingridients = "Мука, вода, масло, какао",
