@@ -42,13 +42,13 @@ namespace DiningEasy
                 Categories.Add(category);
         }
 
-        void CategorySelected(object sender, ItemTappedEventArgs e)
+        async void CategorySelected(object sender, ItemTappedEventArgs e)
         {
             var item = (ICategory)e.Item;
             if (item is null)
                 return;
 
-            DisplayAlert("Selected", item.Name, "OK");
+            await Navigation.PushAsync(new CategoryPage(item));
         }
     }
 }

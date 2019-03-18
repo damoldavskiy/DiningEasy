@@ -1,19 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using System.Collections.ObjectModel;
 
 namespace DiningEasy
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class CategoryPage : ContentView
+	public partial class CategoryPage : ContentPage
 	{
         ObservableCollection<IProduct> products = new ObservableCollection<IProduct>();
+        static ICategory CurrentCategory;
 
         public ObservableCollection<IProduct> Products
         {
@@ -30,17 +28,28 @@ namespace DiningEasy
                 }
             }
         }
-        public CategoryPage ()
+        public CategoryPage (ICategory currentCategory)
 		{
             InitializeComponent();
             BindingContext = this;
+            CurrentCategory = currentCategory;
 
             Load();
         }
         void Load()
         {
-            foreach (var prodact in Model.Manager.CurrentCanteen.Categories)
-                Products.Add(prodact);
+            foreach(IProduct product in CurrentCategory.Products)
+            {
+                Products.Add(product);
+            }
+        }
+        void ProductSelected(object sender, ItemTappedEventArgs e)
+        {
+            var item = (IProduct)e.Item;
+            if (item is null)
+                return;
+
+            
         }
     }
 }

@@ -12,7 +12,7 @@ namespace DiningEasy
             InitializeComponent();
 
             Model.Manager.CurrentCanteen = Model.Manager.Storage.GetCanteens().First();
-            MainPage = new MainPage();
+            MainPage =new NavigationPage(new MainPage());
         }
     }
 }
