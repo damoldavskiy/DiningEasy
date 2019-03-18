@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace DiningEasy.Model
 {
@@ -6,6 +7,7 @@ namespace DiningEasy.Model
     {
         string name;
         string info;
+        IEnumerable<ICategory> categories;
 
         public string Name
         {
@@ -34,7 +36,23 @@ namespace DiningEasy.Model
                 if (info != value)
                 {
                     info = value;
-                    OnPropertyChanged(nameof(info));
+                    OnPropertyChanged(nameof(Info));
+                }
+            }
+        }
+
+        public IEnumerable<ICategory> Categories
+        {
+            get
+            {
+                return categories;
+            }
+            set
+            {
+                if (categories != value)
+                {
+                    categories = value;
+                    OnPropertyChanged(nameof(Categories));
                 }
             }
         }

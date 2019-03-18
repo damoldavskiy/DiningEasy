@@ -5,38 +5,83 @@ namespace DiningEasy.Model
 {
     public class StorageInbuilt : IStorage
     {
-        static Canteen[] canteens = 
+        static Canteen[] canteens =
+        {
+            new Canteen
             {
-            new Canteen { Name = "Клюква", Info = "Шоссе Энтузиастов, 7" }, 
-            new Canteen { Name = "Матрешка", Info = "Электродная, 1" },
-            new Canteen { Name = "Емеля", Info = "Кочновский проезд, 3" },
-            };
-
-        static Category[] categories = 
+                Name = "Клюква",
+                Info = "Шоссе Энтузиастов, 7",
+                Categories = new[]
+                {
+                    new Category
+                    {
+                        Name = "Супы",
+                        Products = new[]
+                        {
+                            new Product
+                            {
+                                Name = "Борщ",
+                                Description = "Вкусный борщ",
+                                Ingridients = "Вода, мясо",
+                                Weight = 300,
+                                Cost = 150 }
+                        }
+                    },
+                    new Category { Name = "Салаты" },
+                    new Category { Name = "Десерты" }
+                }
+            },
+            new Canteen
             {
-            new Category { Name = "Супы" },
-            new Category { Name = "Салаты" },
-            new Category { Name = "Десерты" }
-            };
-        static Product[] products = 
+                Name = "Матрешка", Info = "Электродная, 1",
+                Categories = new[]
+                {
+                    new Category
+                    {
+                        Name = "Супы",
+                        Products = new[]
+                        {
+                            new Product
+                            {
+                                Name = "Борщ",
+                                Description = "Вкусный борщ",
+                                Ingridients = "Вода, мясо",
+                                Weight = 300,
+                                Cost = 150 }
+                        }
+                    },
+                    new Category { Name = "Салаты" },
+                    new Category { Name = "Десерты" }
+                }
+            },
+            new Canteen
             {
-            new Product { Name = "Борщ", Category = categories[0], Description = "Вкусный борщ", Ingridients = "Вода, мясо", Weight = 300, Cost = 150 } 
-            };
-        
+                Name = "Емеля", Info = "Кочновский проезд, 3",
+                Categories = new[]
+                {
+                    new Category
+                    {
+                        Name = "Супы",
+                        Products = new[]
+                        {
+                            new Product
+                            {
+                                Name = "Борщ",
+                                Description = "Вкусный борщ",
+                                Ingridients = "Вода, мясо",
+                                Weight = 300,
+                                Cost = 150 }
+                        }
+                    },
+                    new Category { Name = "Салаты" },
+                    new Category { Name = "Десерты" }
+                }
+            },
+        };
 
         public IEnumerable<ICanteen> GetCanteens()
         {
             return canteens.ToList();
-        }
-
-        public IEnumerable<ICategory> GetCategories(ICanteen canteen)
-        {
-            return categories.ToList();
-        }
-
-        public IEnumerable<IProduct> GetProducts(ICanteen canteen, ICategory category)
-        {
-            return products.ToList();
         }
     }
 }

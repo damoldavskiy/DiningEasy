@@ -1,10 +1,12 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace DiningEasy.Model
 {
     public class Category : ICategory, INotifyPropertyChanged
     {
         string name;
+        IEnumerable<IProduct> products;
 
         public string Name
         {
@@ -18,6 +20,22 @@ namespace DiningEasy.Model
                 {
                     name = value;
                     OnPropertyChanged(nameof(Name));
+                }
+            }
+        }
+
+        public IEnumerable<IProduct> Products
+        {
+            get
+            {
+                return products;
+            }
+            set
+            {
+                if (products != value)
+                {
+                    products = value;
+                    OnPropertyChanged(nameof(Product));
                 }
             }
         }

@@ -5,7 +5,6 @@ namespace DiningEasy.Model
     public class Product : IProduct, INotifyPropertyChanged
     {
         string name;
-        Category category;
         string description;
         string ingridients;
         int weight;
@@ -23,22 +22,6 @@ namespace DiningEasy.Model
                 {
                     name = value;
                     OnPropertyChanged(nameof(Name));
-                }
-            }
-        }
-
-        public ICategory Category
-        {
-            get
-            {
-                return category;
-            }
-            set
-            {
-                if (category != value)
-                {
-                    category = (Category)value;
-                    OnPropertyChanged(nameof(Category));
                 }
             }
         }
