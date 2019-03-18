@@ -7,7 +7,7 @@
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
-                    <Grid >
+                    <Grid>
                         <Image Source="{Binding Path}"></Image>
                         <Label HeightRequest="200" Text="{Binding Name}"/>
                     </Grid>
