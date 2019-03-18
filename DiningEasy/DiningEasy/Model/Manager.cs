@@ -6,9 +6,8 @@ namespace DiningEasy.Model
 {
     public static class Manager
     {
-        public static IStorage GetDefaultStorage()
-        {
-            return new StorageInbuilt();
-        }
+        public static ICanteen CurrentCanteen;
+
+        public static IStorage Storage { get; } = new StorageInbuilt();
     }
 }

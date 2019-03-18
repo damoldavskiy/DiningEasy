@@ -24,7 +24,8 @@ namespace DiningEasy.Model
                                 Description = "Вкусный борщ",
                                 Ingridients = "Вода, мясо",
                                 Weight = 300,
-                                Cost = 150 }
+                                Cost = 150
+                            }
                         }
                     },
                     new Category { Name = "Салаты" },
@@ -33,7 +34,8 @@ namespace DiningEasy.Model
             },
             new Canteen
             {
-                Name = "Матрешка", Info = "Электродная, 1",
+                Name = "Матрешка",
+                Info = "Электродная, 1",
                 Categories = new[]
                 {
                     new Category
@@ -47,7 +49,8 @@ namespace DiningEasy.Model
                                 Description = "Вкусный борщ",
                                 Ingridients = "Вода, мясо",
                                 Weight = 300,
-                                Cost = 150 }
+                                Cost = 150
+                            }
                         }
                     },
                     new Category { Name = "Салаты" },
@@ -56,7 +59,8 @@ namespace DiningEasy.Model
             },
             new Canteen
             {
-                Name = "Емеля", Info = "Кочновский проезд, 3",
+                Name = "Емеля",
+                Info = "Кочновский проезд, 3",
                 Categories = new[]
                 {
                     new Category
@@ -70,7 +74,8 @@ namespace DiningEasy.Model
                                 Description = "Вкусный борщ",
                                 Ingridients = "Вода, мясо",
                                 Weight = 300,
-                                Cost = 150 }
+                                Cost = 150
+                            }
                         }
                     },
                     new Category { Name = "Салаты" },
