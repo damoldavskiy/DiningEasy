@@ -5,9 +5,23 @@ namespace DiningEasy.Model
 {
     public class StorageInbuilt : IStorage
     {
-        static Canteen[] canteens = { new Canteen { Name = "Кочновский", Info = "ФКН" } };
-        static Category[] categories = { new Category { Name = "Супы" } };
-        static Product[] products = { new Product { Name = "Борщ", Category = categories[0], Description = "Вкусный борщ", Ingridients = "Вода, мясо", Weight = 300, Cost = 150 } };
+        static Canteen[] canteens = 
+            {
+            new Canteen { Name = "Клюква", Info = "Шоссе Энтузиастов, 7" }, 
+            new Canteen { Name = "Матрешка", Info = "Электродная, 1" },
+            new Canteen { Name = "Емеля", Info = "Кочновский проезд, 3" },
+            };
+
+        static Category[] categories = 
+            {
+            new Category { Name = "Супы" },
+            new Category { Name = "Салаты" },
+            new Category { Name = "Десерты" }
+            };
+        static Product[] products = 
+            {
+            new Product { Name = "Борщ", Category = categories[0], Description = "Вкусный борщ", Ingridients = "Вода, мясо", Weight = 300, Cost = 150 } 
+            };
         
 
         public IEnumerable<ICanteen> GetCanteens()
