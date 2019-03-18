@@ -15,7 +15,7 @@ namespace DiningEasy.Model
                 {
                     new Category
                     {
-                        Path="Images\\Categories\\Sup.jpg",
+                        Path="Sup.jpg",
                         Name = "Супы",
                         Products = new[]
                         {

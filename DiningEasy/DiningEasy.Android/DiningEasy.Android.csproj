@@ -106,7 +106,7 @@
     <None Include="Resources\drawable\Images\Categories\Grecheskij.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\drawable\Images\Categories\Sup.jpg" />
+    <None Include="Resources\drawable\Sup.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\drawable\Images\Products\Borsh.jpg" />
