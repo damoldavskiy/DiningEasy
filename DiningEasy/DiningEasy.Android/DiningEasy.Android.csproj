@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -85,7 +85,6 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\drawable\" />
     <Folder Include="Resources\drawable-hdpi\" />
     <Folder Include="Resources\drawable-xhdpi\" />
     <Folder Include="Resources\drawable-xxhdpi\" />
@@ -97,5 +96,53 @@
       <Name>DiningEasy</Name>
     </ProjectReference>
   </ItemGroup>
- <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ItemGroup>
+    <None Include="Resources\drawable\Images\Categories\Beverages.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawable\Images\Categories\Desert.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawable\Images\Categories\Grecheskij.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawable\Images\Categories\Sup.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawable\Images\Products\Borsh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawable\Images\Products\Coffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawable\Images\Products\Cookie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawable\Images\Products\Desert.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawable\Images\Products\Grecheskij.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawable\Images\Products\Olivie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawable\Images\Products\Salad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawable\Images\Products\Shi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawable\Images\Products\Shtrudel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawable\Images\Products\Tea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawable\Images\Products\Uha.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawable\Images\Products\Сezar.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
