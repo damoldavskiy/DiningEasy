@@ -18,5 +18,6 @@ namespace DiningEasy
             CurrentProduct = product;
             BindingContext = this;
 		}
-	}
+        
+    }
 }

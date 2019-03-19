@@ -43,13 +43,13 @@ namespace DiningEasy
                 Products.Add(product);
             }
         }
-        void ProductSelected(object sender, ItemTappedEventArgs e)
+        async void ProductSelected(object sender, ItemTappedEventArgs e)
         {
             var item = (IProduct)e.Item;
             if (item is null)
                 return;
 
-            
+            await Navigation.PushAsync(new ProductPage(item));
         }
     }
 }
