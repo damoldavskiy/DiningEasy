@@ -3,16 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DiningEasy.MenuPage"
              Title="Menu">
-    <ListView  SelectionMode="None"  ItemsSource="{Binding Categories}" ItemTapped="CategorySelected">
-        <ListView.ItemTemplate >
+    <ListView RowHeight="200" SelectionMode="None" ItemsSource="{Binding Categories}" ItemTapped="CategorySelected">
+        <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
-                    <Grid HeightRequest="200">
-                        <Grid.RowDefinitions >
-                            <RowDefinition  ></RowDefinition>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <Image  Aspect="AspectFill" Source="{Binding Path}"></Image>
-                        <Label   Text="{Binding Name}"/>
+                        <Image Aspect="AspectFill" Source="{Binding Path}"/>
+                        <Label Text="{Binding Name}"/>
                     </Grid>
                 </ViewCell>
             </DataTemplate>
