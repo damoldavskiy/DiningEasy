@@ -24,7 +24,8 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <BoxView Color="Black" Opacity="0.8" VerticalOptions="End" HeightRequest="80"/>
-        <Label TextColor="White" Margin="20,0,0,20" FontSize="20" VerticalOptions="End" Text="{Binding Cost}"/>
+        <BoxView Color="Black" Opacity="0.8" VerticalOptions="End" HeightRequest="60"/>
+        <Label TextColor="White" Margin="15" FontSize="20" VerticalOptions="End" Text="{Binding Cost}"/>
+        <Button Text="Оплатить" TextColor="White" BackgroundColor="Transparent" Margin="5" Clicked="BuyClicked" HorizontalOptions="End" VerticalOptions="End"/>
     </Grid>
 </ContentPage>

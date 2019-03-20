@@ -51,5 +51,10 @@ namespace DiningEasy
                 Products.Add(product);
             OnPropertyChanged(nameof(Cost));
         }
-	}
+
+        async void BuyClicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Покупка", "Заказ сформирован", "OK");
+        }
+    }
 }
