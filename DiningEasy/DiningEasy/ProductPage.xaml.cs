@@ -12,6 +12,7 @@ namespace DiningEasy
 	public partial class ProductPage : ContentPage
 	{
         public IProduct currentProduct;
+
         public IProduct CurrentProduct
         {
             get
@@ -27,6 +28,7 @@ namespace DiningEasy
                 }
             }
         }
+
 		public ProductPage (IProduct product)
 		{
 			InitializeComponent ();
@@ -34,6 +36,11 @@ namespace DiningEasy
 
             BindingContext = this;
 		}
-        
+
+        void AddToBusket(object sender, EventArgs e)
+        {
+            Model.Basket.Add(CurrentProduct);
+            BasketPage.Instance.Update();
+        }
     }
 }

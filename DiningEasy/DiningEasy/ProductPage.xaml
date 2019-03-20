@@ -22,7 +22,7 @@
                     <Label FontSize="13" TextColor="#333333" Text="{Binding CurrentProduct.Ingridients}"/>
                     <Label FontSize="16" TextColor="Black" FontAttributes="Bold" Text="{Binding CurrentProduct.Cost}"/>
                     <Label FontSize="16" TextColor="Black" FontAttributes="Italic" Text="{Binding CurrentProduct.Weight}"/>
-                    <Button/>
+                    <Button Text="Добавить в корзину" Clicked="AddToBusket"/>
                 </Grid>
                 </StackLayout>
         </StackLayout>
