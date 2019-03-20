@@ -11,7 +11,7 @@ namespace DiningEasy
 {
 	public partial class ProductPage : ContentPage
 	{
-        static IProduct CurrentProduct;
+        public IProduct CurrentProduct;
 		public ProductPage (IProduct product)
 		{
 			InitializeComponent ();

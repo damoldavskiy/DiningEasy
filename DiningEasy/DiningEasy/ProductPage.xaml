@@ -4,12 +4,12 @@
              x:Class="DiningEasy.ProductPage">
     <ContentPage.Content>
         <StackLayout>
-            <Image Aspect="AspectFill" Source="{Binding Path}"/>
-            <Label Text="{Binding Name}"/>
-            <Label Text="{Binding Description}"/>
-            <Label Text="{Binding Ingridients}"/>
-            <Label Text="{Binding Cost}"/>
-            <Label Text="{Binding Weight}"/>
+            <Image Aspect="AspectFill" Source="{Binding CurrentProduct.Path}"/>
+            <Label Text="{Binding CurrentProduct.Name}"/>
+            <Label Text="{Binding CurrentProduct.Description}"/>
+            <Label Text="{Binding CurrentProduct.Ingridients}"/>
+            <Label Text="{Binding CurrentProduct.Cost}"/>
+            <Label Text="{Binding CurrentProduct.Weight}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
