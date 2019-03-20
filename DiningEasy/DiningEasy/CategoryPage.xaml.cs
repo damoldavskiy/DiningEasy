@@ -4,46 +4,37 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
 
 namespace DiningEasy
 {
 	public partial class CategoryPage : ContentPage
 	{
-        ObservableCollection<IProduct> products = new ObservableCollection<IProduct>();
-        static ICategory CurrentCategory;
+        ICategory category;
 
-        public ObservableCollection<IProduct> Products
+        public ICategory Category
         {
             get
             {
-                return products;
+                return category;
             }
             set
             {
-                if (products != value)
+                if (category != value)
                 {
-                    products = value;
-                    OnPropertyChanged(nameof(Products));
+                    category = value;
+                    OnPropertyChanged(nameof(Category));
                 }
             }
         }
 
-        public CategoryPage(ICategory currentCategory)
+        public CategoryPage(ICategory category)
 		{
             InitializeComponent();
             BindingContext = this;
-            CurrentCategory = currentCategory;
 
-            Load();
-        }
-
-        void Load()
-        {
-            foreach(IProduct product in CurrentCategory.Products)
-            {
-                Products.Add(product);
-            }
+            Category = category;
         }
 
         async void ProductSelected(object sender, ItemTappedEventArgs e)

@@ -41,7 +41,7 @@ namespace DiningEasy
         public BasketPage()
 		{
 			InitializeComponent();
-            Instance = this;
+            BindingContext = Instance = this;
 		}
 
         public void Update()
