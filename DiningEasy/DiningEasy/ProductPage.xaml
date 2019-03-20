@@ -3,33 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DiningEasy.ProductPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Image Aspect="AspectFill" Source="{Binding CurrentProduct.Path}"/>
-            <StackLayout Margin="15,10,15,0">
-                <Label FontSize="20" TextColor="Black" Text="{Binding CurrentProduct.Name}"/>
-                <Label Margin="10,0,0,0" FontSize="14" TextColor="#333333" Text="{Binding CurrentProduct.Description}"/>
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="0.3*"/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                    </Grid.ColumnDefinitions>
-                    <Label Margin="0,15,0,0" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" FontSize="16" TextColor="Black" Text="Ингридиенты:"/>
-                    <Label Margin="10,0,0,0" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4"  FontSize="13" TextColor="#333333" Text="{Binding CurrentProduct.Ingridients}"/>
-                    <Label Grid.Row="2" Grid.Column="0" FontSize="16" HorizontalTextAlignment="End" TextColor="Black" FontAttributes="Bold" Text="{Binding CurrentProduct.Cost}"/>
-                    <Label Grid.Row="2" Grid.Column="1" FontSize="16" TextColor="Black" FontAttributes="Bold" Text="рублей"/>
-                    <Label Grid.Row="2" Grid.Column="2" FontSize="16" HorizontalTextAlignment="End" TextColor="Black" FontAttributes="Italic" Text="{Binding CurrentProduct.Weight}"/>
-                    <Label Grid.Row="2" Grid.Column="3" FontSize="16" TextColor="Black" FontAttributes="Italic" Text="грамм"/>
-                    <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="4"/>
-                </Grid>
+        <ScrollView>
+            <StackLayout>
+                <Image Aspect="AspectFill" Source="{Binding CurrentProduct.Path}"/>
+                <StackLayout Margin="15,10,15,0">
+                    <Label FontSize="20" TextColor="Black" Text="{Binding CurrentProduct.Name}"/>
+                    <Label Margin="10,0,0,0" FontSize="14" TextColor="#333333" Text="{Binding CurrentProduct.Description}"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.3*"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Label Margin="0,15,0,0" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" FontSize="16" TextColor="Black" Text="Ингридиенты:"/>
+                        <Label Margin="10,0,0,0" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4"  FontSize="13" TextColor="#333333" Text="{Binding CurrentProduct.Ingridients}"/>
+                        <Label Grid.Row="2" Grid.Column="0" FontSize="16" HorizontalTextAlignment="End" TextColor="Black" FontAttributes="Bold" Text="{Binding CurrentProduct.Cost}"/>
+                        <Label Grid.Row="2" Grid.Column="1" FontSize="16" TextColor="Black" FontAttributes="Bold" Text="рублей"/>
+                        <Label Grid.Row="2" Grid.Column="2" FontSize="16" HorizontalTextAlignment="End" TextColor="Black" FontAttributes="Italic" Text="{Binding CurrentProduct.Weight}"/>
+                        <Label Grid.Row="2" Grid.Column="3" FontSize="16" TextColor="Black" FontAttributes="Italic" Text="грамм"/>
+                        <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="4"/>
+                    </Grid>
                 </StackLayout>
-        </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
