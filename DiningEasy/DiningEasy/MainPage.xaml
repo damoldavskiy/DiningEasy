@@ -5,12 +5,12 @@
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             x:Class="DiningEasy.MainPage">
     <MasterDetailPage.Master>
-        <ContentPage Title="Menu">
+        <ContentPage BackgroundColor="#dd2c00" Title="Menu">
             <ListView SelectionMode="None" ItemsSource="{Binding MenuItems}" ItemTapped="MenuItemTapped">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Label FontSize="16" TextColor="Black" Text="{Binding Title}"/>
+                            <Label Margin="15,0,0,0" TextColor="White" FontSize="16" Text="{Binding Title}"/>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>

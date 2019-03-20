@@ -16,8 +16,8 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
                         <Label Grid.Column="0" Grid.Row="0" TextColor="Black" FontSize="20" Text="{Binding Name}"/>
-                        <Label Grid.Column="0" Grid.Row="1" TextColor="#FF0000" FontSize="14" Text="{Binding Info}"/>
-                        <BoxView Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" Color="#555555" />
+                        <Label Grid.Column="0" Grid.Row="1" TextColor="Black" FontSize="14" Text="{Binding Info}"/>
+                        <BoxView Grid.Column="1" BackgroundColor="#a30000" Grid.Row="0" Grid.RowSpan="2"/>
                     </Grid>
                 </ViewCell>
             </DataTemplate>

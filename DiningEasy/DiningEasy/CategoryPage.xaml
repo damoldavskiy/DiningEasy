@@ -18,7 +18,7 @@
                                 <RowDefinition Height="*"/>
                             </Grid.RowDefinitions>
                             <Image Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Aspect="AspectFill" Source="{Binding Path}"/>
-                            <BoxView Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" Color="Black" Opacity="0.5" VerticalOptions="End" HeightRequest="40"/>
+                            <BoxView Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" Color="#a30000" VerticalOptions="End" HeightRequest="40"/>
                             <Label Margin="10" Grid.Row="0" Grid.Column="1" TextColor="Black" FontSize="20" VerticalOptions="End" HorizontalOptions="Start" Text="{Binding Name}"/>
                             <Label Margin="10" Grid.Row="1" Grid.Column="1" TextColor="White" FontSize="18" VerticalOptions="End" HorizontalOptions="End" Text="{Binding Cost}"/>
                         </Grid>

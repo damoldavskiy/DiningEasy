@@ -28,7 +28,7 @@
                         <Label Grid.Row="2" Grid.Column="1" FontSize="16" TextColor="Black" FontAttributes="Bold" Text="рублей"/>
                         <Label Grid.Row="2" Grid.Column="2" FontSize="16" HorizontalTextAlignment="End" TextColor="Black" FontAttributes="Italic" Text="{Binding Product.Weight}"/>
                         <Label Grid.Row="2" Grid.Column="3" FontSize="16" TextColor="Black" FontAttributes="Italic" Text="грамм"/>
-                        <Button Text="Добавить в корзину" Clicked="AddToBusket" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="4"/>
+                        <Button BackgroundColor="#dd2c00" Text="Добавить в корзину" Clicked="AddToBusket" Grid.Row="3" Grid.Column="0" TextColor="White" Grid.ColumnSpan="4"/>
                     </Grid>
                 </StackLayout>
             </StackLayout>
