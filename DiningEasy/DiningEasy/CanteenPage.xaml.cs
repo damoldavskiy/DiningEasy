@@ -9,7 +9,7 @@ using Xamarin.Forms;
 
 namespace DiningEasy
 {
-    public partial class CanteenPage : ContentView
+    public partial class CanteenPage : ContentPage
     {
         public IEnumerable<ICanteen> Canteens
         {

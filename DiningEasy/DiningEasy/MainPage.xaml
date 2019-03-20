@@ -5,7 +5,17 @@
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             x:Class="DiningEasy.MainPage">
     <MasterDetailPage.Master>
-        <ContentPage Title="Menu"/>
+        <ContentPage Title="Menu">
+            <ListView SelectionMode="None" ItemsSource="{Binding MenuItems}" ItemTapped="MenuItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label Text="{Binding Title}"/>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ContentPage>
     </MasterDetailPage.Master>
     <MasterDetailPage.Detail>
         <NavigationPage>
