@@ -6,7 +6,7 @@
             x:Class="DiningEasy.MainPage">
     <MasterDetailPage.Master>
         <ContentPage BackgroundColor="#dd2c00" Title="Menu">
-            <ListView SelectionMode="None" ItemsSource="{Binding MenuItems}" ItemTapped="MenuItemTapped">
+            <ListView SelectionMode="None" SeparatorVisibility="None" ItemsSource="{Binding MenuItems}" ItemTapped="MenuItemTapped">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

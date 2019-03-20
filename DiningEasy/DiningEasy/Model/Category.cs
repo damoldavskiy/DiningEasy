@@ -9,6 +9,9 @@ namespace DiningEasy.Model
         string path;
         IEnumerable<IProduct> products;
 
+        /// <summary>
+        /// Название
+        /// </summary>
         public string Name
         {
             get
@@ -24,6 +27,10 @@ namespace DiningEasy.Model
                 }
             }
         }
+
+        /// <summary>
+        /// Путь до изображения
+        /// </summary>
         public string Path
         {
             get
@@ -40,6 +47,9 @@ namespace DiningEasy.Model
             }
         }
 
+        /// <summary>
+        /// Доступные продукты
+        /// </summary>
         public IEnumerable<IProduct> Products
         {
             get

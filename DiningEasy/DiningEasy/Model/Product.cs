@@ -11,6 +11,9 @@ namespace DiningEasy.Model
         int weight;
         int cost;
 
+        /// <summary>
+        /// Путь до изображения
+        /// </summary>
         public string Path
         {
             get
@@ -26,6 +29,10 @@ namespace DiningEasy.Model
                 }
             }
         }
+
+        /// <summary>
+        /// Название
+        /// </summary>
         public string Name
         {
             get
@@ -42,6 +49,9 @@ namespace DiningEasy.Model
             }
         }
 
+        /// <summary>
+        /// Описание
+        /// </summary>
         public string Description
         {
             get
@@ -58,6 +68,9 @@ namespace DiningEasy.Model
             }
         }
 
+        /// <summary>
+        /// Ингридиенты
+        /// </summary>
         public string Ingridients
         {
             get
@@ -74,6 +87,9 @@ namespace DiningEasy.Model
             }
         }
 
+        /// <summary>
+        /// Вес (в граммах)
+        /// </summary>
         public int Weight
         {
             get
@@ -90,6 +106,9 @@ namespace DiningEasy.Model
             }
         }
 
+        /// <summary>
+        /// Стоимость
+        /// </summary>
         public int Cost
         {
             get

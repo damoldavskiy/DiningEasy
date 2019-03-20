@@ -291,6 +291,10 @@ namespace DiningEasy.Model
             },
         };
 
+        /// <summary>
+        /// Список столовых
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<ICanteen> GetCanteens()
         {
             return canteens.ToList();

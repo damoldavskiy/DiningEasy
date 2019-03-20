@@ -9,6 +9,9 @@ namespace DiningEasy.Model
         string info;
         IEnumerable<ICategory> categories;
 
+        /// <summary>
+        /// Название
+        /// </summary>
         public string Name
         {
             get
@@ -25,6 +28,9 @@ namespace DiningEasy.Model
             }
         }
 
+        /// <summary>
+        /// Информация
+        /// </summary>
         public string Info
         {
             get
@@ -41,6 +47,9 @@ namespace DiningEasy.Model
             }
         }
 
+        /// <summary>
+        /// Доступные категории
+        /// </summary>
         public IEnumerable<ICategory> Categories
         {
             get
