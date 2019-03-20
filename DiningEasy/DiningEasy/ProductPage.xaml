@@ -5,24 +5,25 @@
     <ContentPage.Content>
         <StackLayout>
             <Image Aspect="AspectFill" Source="{Binding CurrentProduct.Path}"/>
-            <StackLayout Margin="15,10,15">
+            <StackLayout Margin="15,10,15,0">
                 <Label FontSize="20" TextColor="Black" Text="{Binding CurrentProduct.Name}"/>
                 <Label FontSize="14" TextColor="#333333" Text="{Binding CurrentProduct.Description}"/>
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition/>
                         <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
-                        <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <Label FontSize="16" TextColor="Black" Text="Ингридиенты:"/>
-                    <Label FontSize="13" TextColor="#333333" Text="{Binding CurrentProduct.Ingridients}"/>
-                    <Label FontSize="16" TextColor="Black" FontAttributes="Bold" Text="{Binding CurrentProduct.Cost}"/>
-                    <Label FontSize="16" TextColor="Black" FontAttributes="Italic" Text="{Binding CurrentProduct.Weight}"/>
-                    <Button Text="Добавить в корзину" Clicked="AddToBusket"/>
+                    <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontSize="16" TextColor="Black" Text="Ингридиенты:"/>
+                    <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"  FontSize="13" TextColor="#333333" Text="{Binding CurrentProduct.Ingridients}"/>
+                    <Label Grid.Row="2" Grid.Column="0" FontSize="16" TextColor="Black" FontAttributes="Bold" Text="{Binding CurrentProduct.Cost}"/>
+                    <Label Grid.Row="2" Grid.Column="1" FontSize="16" TextColor="Black" FontAttributes="Italic" Text="{Binding CurrentProduct.Weight}"/>
+                    <Button Text="Добавить в корзину" Clicked="AddToBusket" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
                 </Grid>
                 </StackLayout>
         </StackLayout>
