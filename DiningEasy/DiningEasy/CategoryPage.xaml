@@ -7,15 +7,20 @@
             <DataTemplate>
                 <ViewCell>
                     <Grid>
-                        <Image Aspect="AspectFill" Source="{Binding Path}"/>
-                        <BoxView Color="Black" Opacity="0.5" VerticalOptions="End" HeightRequest="40"/>
+                        
                         <Grid>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="5*"/>
+                                <ColumnDefinition Width="2*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Label TextColor="White" Margin="20,0,0,8" FontSize="20" VerticalOptions="End" HorizontalOptions="Start" Text="{Binding Name}"/>
-                            <Label TextColor="White" Margin="0,0,10,8" FontSize="18" VerticalOptions="End" HorizontalOptions="End" Text="{Binding Cost}"/>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="2*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Image Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Aspect="AspectFill" Source="{Binding Path}"/>
+                            <BoxView Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" Color="Black" Opacity="0.5" VerticalOptions="End" HeightRequest="40"/>
+                            <Label Margin="10" Grid.Row="0" Grid.Column="1" TextColor="Black" FontSize="20" VerticalOptions="End" HorizontalOptions="Start" Text="{Binding Name}"/>
+                            <Label Margin="10" Grid.Row="1" Grid.Column="1" TextColor="White" FontSize="18" VerticalOptions="End" HorizontalOptions="End" Text="{Binding Cost}"/>
                         </Grid>
                     </Grid>
                 </ViewCell>
