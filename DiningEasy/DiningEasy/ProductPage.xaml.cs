@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace DiningEasy
 {
@@ -37,10 +36,12 @@ namespace DiningEasy
             Product = product;
 		}
 
-        void AddToBusket(object sender, EventArgs e)
+        async void AddToBusket(object sender, EventArgs e)
         {
             Model.Basket.Add(Product);
             BasketPage.Instance.Update();
+
+            await DisplayAlert("Корзина", Product.Name + " добавлен в корзину", "OK");
         }
     }
 }

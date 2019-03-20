@@ -41,7 +41,7 @@ namespace DiningEasy.Model
                             {
                                 Path="Uha.jpg",
                                 Name = "Уха",
-                                Description = "Захотелось чего то новенького? Попробуйте фирменной ухи от шеф-повара!",
+                                Description = "Захотелось чего-то новенького? Попробуйте фирменной ухи от шеф-повара!",
                                 Ingridients = "Вода, мясо",
                                 Weight = 200,
                                 Cost = 180
@@ -67,7 +67,7 @@ namespace DiningEasy.Model
                             {
                                 Path="Cezar.jpg",
                                 Name = "Цезарь",
-                                Description = "Вкусный, легкий салат для истиных гурманов.",
+                                Description = "Вкусный, легкий салат для истинных гурманов.",
                                 Ingridients = "Салат, сыр, сметана, чеснок, майонез",
                                 Weight = 200,
                                 Cost = 120
@@ -76,7 +76,7 @@ namespace DiningEasy.Model
                             {
                                 Path="Olivie.jpg",
                                 Name = "Оливье",
-                                Description = "Хотите попробовать что то из национальных русских блюд? Пожалуйста)",
+                                Description = "Хотите попробовать что-то из национальных русских блюд? Пожалуйста)",
                                 Ingridients = "Яйцо, картошка, сыр, колбаса, майонез",
                                 Weight = 150,
                                 Cost = 90
@@ -112,7 +112,8 @@ namespace DiningEasy.Model
             },
             new Canteen
             {
-                Name = "Матрешка", Info = "Электродная, 1",
+                Name = "Матрешка",
+                Info = "Электродная, 1",
                 Categories = new[]
                 {
                     new Category
@@ -160,7 +161,7 @@ namespace DiningEasy.Model
                             {
                                 Path="Cezar.jpg",
                                 Name = "Цезарь",
-                                Description = "Вкусный, легкий салат для истиных гурманов.",
+                                Description = "Вкусный, легкий салат для истинных гурманов.",
                                 Ingridients = "Салат, сыр, сметана, чеснок, майонез",
                                 Weight = 200,
                                 Cost = 120
@@ -169,7 +170,7 @@ namespace DiningEasy.Model
                             {
                                 Path="Olivie.jpg",
                                 Name = "Оливье",
-                                Description = "Хотите попробовать что то из национальных русских блюд? Пожалуйста)",
+                                Description = "Хотите попробовать что-то из национальных русских блюд? Пожалуйста)",
                                 Ingridients = "Яйцо, картошка, сыр, колбаса, майонез",
                                 Weight = 150,
                                 Cost = 90
@@ -194,7 +195,7 @@ namespace DiningEasy.Model
                             {
                                 Path="Coffee.jpg",
                                 Name = "Кофе",
-                                Description = "Поможет вам взбодриться сонным пасмурным утром и не только)",
+                                Description = "Поможет вам взбодриться сонным пасмурным утром, и не только)",
                                 Ingridients = "Кофейный зерна, вода",
                                 Weight = 200,
                                 Cost = 100
@@ -205,7 +206,8 @@ namespace DiningEasy.Model
             },
             new Canteen
             {
-                Name = "Емеля", Info = "Кочновский проезд, 3",
+                Name = "Емеля",
+                Info = "Кочновский проезд, 3",
                 Categories = new[]
                 {
                     new Category
@@ -227,7 +229,7 @@ namespace DiningEasy.Model
                             {
                                 Path="Uha.jpg",
                                 Name = "Уха",
-                                Description = "Захотелось чего то новенького? Попробуйте фирменной ухи от шеф-повара!",
+                                Description = "Захотелось чего-то новенького? Попробуйте фирменной ухи от шеф-повара!",
                                 Ingridients = "Вода, мясо",
                                 Weight = 200,
                                 Cost = 180
@@ -253,7 +255,7 @@ namespace DiningEasy.Model
                             {
                                 Path="Olivie.jpg",
                                 Name = "Оливье",
-                                Description = "Хотите попробовать что то из национальных русских блюд? Пожалуйста)",
+                                Description = "Хотите попробовать что-то из национальных русских блюд? Пожалуйста)",
                                 Ingridients = "Яйцо, картошка, сыр, колбаса, майонез",
                                 Weight = 150,
                                 Cost = 90
