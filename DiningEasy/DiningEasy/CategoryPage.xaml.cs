@@ -28,7 +28,8 @@ namespace DiningEasy
                 }
             }
         }
-        public CategoryPage (ICategory currentCategory)
+
+        public CategoryPage(ICategory currentCategory)
 		{
             InitializeComponent();
             BindingContext = this;
@@ -36,6 +37,7 @@ namespace DiningEasy
 
             Load();
         }
+
         void Load()
         {
             foreach(IProduct product in CurrentCategory.Products)
@@ -43,6 +45,7 @@ namespace DiningEasy
                 Products.Add(product);
             }
         }
+
         async void ProductSelected(object sender, ItemTappedEventArgs e)
         {
             var item = (IProduct)e.Item;

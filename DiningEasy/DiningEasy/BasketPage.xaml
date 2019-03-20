@@ -4,7 +4,7 @@
              x:Class="DiningEasy.BasketPage"
              Title="Basket">
     <Grid>
-        <ListView RowHeight="150" SelectionMode="None" ItemsSource="{Binding Products}" ItemTapped="ProductSelected">
+        <ListView RowHeight="150" SelectionMode="None" ItemsSource="{Binding Products}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

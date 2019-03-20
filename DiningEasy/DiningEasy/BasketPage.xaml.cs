@@ -10,7 +10,7 @@ namespace DiningEasy
 {
 	public partial class BasketPage : ContentPage
 	{
-        ObservableCollection<IProduct> products;
+        ObservableCollection<IProduct> products = new ObservableCollection<IProduct>();
 
         public static BasketPage Instance { get; private set; }
 
@@ -49,6 +49,7 @@ namespace DiningEasy
             Products.Clear();
             foreach (var product in Model.Basket.Get())
                 Products.Add(product);
+            OnPropertyChanged(nameof(Cost));
         }
 	}
 }
