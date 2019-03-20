@@ -2,19 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DiningEasy.CategoryPage">
-    <ListView RowHeight="150" SelectionMode="None" ItemsSource="{Binding Products}" ItemTapped="ProductSelected">
+    <ListView RowHeight="150" SelectionMode="None" ItemsSource="{Binding Category.Products}" ItemTapped="ProductSelected">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
                     <Grid>
-                        <Image  Aspect="AspectFill" Source="{Binding Path}"/>
+                        <Image Aspect="AspectFill" Source="{Binding Path}"/>
                         <BoxView Color="Black" Opacity="0.5" VerticalOptions="End" HeightRequest="40"/>
-                        <Grid >
+                        <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="5*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Label TextColor="White" Margin="20,0,0,8" FontSize="20" VerticalOptions="End" HorizontalOptions="Start"  Text="{Binding Name}"/>
+                            <Label TextColor="White" Margin="20,0,0,8" FontSize="20" VerticalOptions="End" HorizontalOptions="Start" Text="{Binding Name}"/>
                             <Label TextColor="White" Margin="0,0,10,8" FontSize="18" VerticalOptions="End" HorizontalOptions="End" Text="{Binding Cost}"/>
                         </Grid>
                     </Grid>

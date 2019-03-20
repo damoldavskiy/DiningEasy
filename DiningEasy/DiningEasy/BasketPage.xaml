@@ -3,9 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DiningEasy.BasketPage"
              Title="Basket">
-    <StackLayout>
-        <Label Text="Welcome to Basket2!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-    </StackLayout>
+    <Grid>
+        <ListView RowHeight="150" SelectionMode="None" ItemsSource="{Binding Products}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Image Aspect="AspectFill" Source="{Binding Path}"/>
+                            <BoxView Color="Black" Opacity="0.5" VerticalOptions="End" HeightRequest="40"/>
+                            <Grid >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="5*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label TextColor="White" Margin="20,0,0,8" FontSize="20" VerticalOptions="End" HorizontalOptions="Start" Text="{Binding Name}"/>
+                                <Label TextColor="White" Margin="0,0,10,8" FontSize="18" VerticalOptions="End" HorizontalOptions="End" Text="{Binding Cost}"/>
+                            </Grid>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <BoxView Color="Black" Opacity="0.8" VerticalOptions="End" HeightRequest="80"/>
+        <Label TextColor="White" Margin="20,0,0,20" FontSize="20" VerticalOptions="End" Text="{Binding Cost}"/>
+    </Grid>
 </ContentPage>

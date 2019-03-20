@@ -11,29 +11,36 @@ namespace DiningEasy
 {
 	public partial class ProductPage : ContentPage
 	{
-        public IProduct currentProduct;
-        public IProduct CurrentProduct
+        public IProduct product;
+
+        public IProduct Product
         {
             get
             {
-                return currentProduct;
+                return product;
             }
             set
             {
-                if (currentProduct != value)
+                if (product != value)
                 {
-                    currentProduct = value;
-                    OnPropertyChanged(nameof(CurrentProduct));
+                    product = value;
+                    OnPropertyChanged(nameof(Product));
                 }
             }
         }
+
 		public ProductPage (IProduct product)
 		{
 			InitializeComponent ();
-            CurrentProduct = product;
-
             BindingContext = this;
+
+            Product = product;
 		}
-        
+
+        void AddToBusket(object sender, EventArgs e)
+        {
+            Model.Basket.Add(Product);
+            BasketPage.Instance.Update();
+        }
     }
 }
