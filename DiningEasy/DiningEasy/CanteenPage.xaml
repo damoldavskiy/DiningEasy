@@ -2,13 +2,22 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DiningEasy.CanteenPage">
-    <ListView RowHeight="100" SelectionMode="None" ItemsSource="{Binding Canteens}" ItemTapped="CanteenSelected">
+    <ListView RowHeight="80" SelectionMode="None" ItemsSource="{Binding Canteens}" ItemTapped="CanteenSelected">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
-                    <Grid>
-                        <Label TextColor="Black" FontSize="18" Text="{Binding Name}"/>
-                        <Label TextColor="#333333" FontSize="14" Text="{Binding Info}"/>
+                    <Grid Margin="10,10,0,10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Grid.Row="0" TextColor="Black" FontSize="20" Text="{Binding Name}"/>
+                        <Label Grid.Column="0" Grid.Row="1" TextColor="#FF0000" FontSize="14" Text="{Binding Info}"/>
+                        <BoxView Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" Color="#555555" />
                     </Grid>
                 </ViewCell>
             </DataTemplate>
