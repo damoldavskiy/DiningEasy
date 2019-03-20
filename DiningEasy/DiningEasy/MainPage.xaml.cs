@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 namespace DiningEasy
 {
-    public partial class MainPage : TabbedPage
+    public partial class MainPage : MasterDetailPage
     {
         public MainPage()
         {
