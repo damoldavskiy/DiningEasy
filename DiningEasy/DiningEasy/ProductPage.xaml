@@ -5,11 +5,26 @@
     <ContentPage.Content>
         <StackLayout>
             <Image Aspect="AspectFill" Source="{Binding CurrentProduct.Path}"/>
-            <Label Text="{Binding CurrentProduct.Name}"/>
-            <Label Text="{Binding CurrentProduct.Description}"/>
-            <Label Text="{Binding CurrentProduct.Ingridients}"/>
-            <Label Text="{Binding CurrentProduct.Cost}"/>
-            <Label Text="{Binding CurrentProduct.Weight}"/>
+            <StackLayout Margin="15,10,15">
+                <Label FontSize="20" TextColor="Black" Text="{Binding CurrentProduct.Name}"/>
+                <Label FontSize="14" TextColor="#333333" Text="{Binding CurrentProduct.Description}"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label FontSize="16" TextColor="Black" Text="Ингридиенты:"/>
+                    <Label FontSize="13" TextColor="#333333" Text="{Binding CurrentProduct.Ingridients}"/>
+                    <Label FontSize="16" TextColor="Black" FontAttributes="Bold" Text="{Binding CurrentProduct.Cost}"/>
+                    <Label FontSize="16" TextColor="Black" FontAttributes="Italic" Text="{Binding CurrentProduct.Weight}"/>
+                    <Button/>
+                </Grid>
+                </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -11,11 +11,27 @@ namespace DiningEasy
 {
 	public partial class ProductPage : ContentPage
 	{
-        public IProduct CurrentProduct;
+        public IProduct currentProduct;
+        public IProduct CurrentProduct
+        {
+            get
+            {
+                return currentProduct;
+            }
+            set
+            {
+                if (currentProduct != value)
+                {
+                    currentProduct = value;
+                    OnPropertyChanged(nameof(CurrentProduct));
+                }
+            }
+        }
 		public ProductPage (IProduct product)
 		{
 			InitializeComponent ();
             CurrentProduct = product;
+
             BindingContext = this;
 		}
         
